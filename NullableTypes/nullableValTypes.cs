@@ -27,10 +27,24 @@ class NullableValueTypes
             sum = a + b;
             Console.WriteLine($"The sum is {sum}");
         }
-        catch (Exception e)
+        catch //(Exception e)
         {
-            Console.WriteLine(" ERROR: One of the values was not input");
-        }
+            if (firstNum == "" || secondNum == "")
+            {
+                if (firstNum == "")
+                {
+                    Console.WriteLine("First number has no value");
+                }
+                else if (secondNum == "")
+                {
+                    Console.WriteLine("Second number has no value");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Both numbers were not input");
+            }
 
+        }
     }
 }
