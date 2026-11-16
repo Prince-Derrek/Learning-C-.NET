@@ -5,7 +5,7 @@ class NullableValueTypes
     static void Main(string[] args)
     {
         //define a nullable type (T?)
-        int? sum = 0;
+        int? sum;
 
         int? a, b;
 
